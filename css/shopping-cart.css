@@ -1,0 +1,283 @@
+.container {
+    width: 80%;
+    height: 750px;
+    background-color: #C3C3D6;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.title img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.title {
+    display: block;
+    clear: both;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.information {
+    background-color: #C3C3D6;
+}
+
+.left {
+    float: left;
+    position: relative;
+    width: 60%;
+    height: 600px;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(1) {
+    background-color: rgb(70, 70, 70);
+    height: 40px;
+}
+
+tr {
+    background-color: rgb(120, 120, 120);
+    height: 40px;
+}
+
+
+th {
+    line-height: 3;
+    font-weight: bold;
+}
+
+th:nth-child(1),
+th:nth-child(5) {
+    width: 30%;
+}
+
+th:nth-child(3) {
+    width: 20%;
+}
+
+th:nth-child(2),
+th:nth-child(4) {
+    width: 10%;
+}
+
+.cancel {
+    display: inline-block;
+    width: 20px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.cancel.RWD {
+    display: none;
+}
+
+.sum {
+    display: inline-block;
+}
+
+td {
+    text-align: center;
+    line-height: 3;
+    border-bottom: rgb(150, 150, 150) solid 1px;
+
+}
+
+.num {
+    width: 20px;
+    font-size: 18px;
+}
+
+#note {
+    width: 50%;
+}
+
+.up,
+.down,
+.cancel {
+    cursor: pointer;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    clear: both;
+    font-size: 23px;
+    margin: auto;
+    padding: 10px;
+}
+
+.total {
+    color: black;
+}
+
+b {
+    color: red;
+    margin: 0 5px;
+}
+
+.confirm,
+.back {
+    width: 80px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.confirm:hover,
+.back:hover {
+    transform: translate(-5px, -5px);
+}
+
+.right {
+    width: 30%;
+    font-size: 23px;
+    background-color: #C3C3D6;
+    float: right;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    border-left: 2px solid grey;
+    padding-left: 40px;
+}
+
+input,
+select {
+    height: 30px;
+}
+
+input,
+select,
+textarea {
+    width: 85%;
+}
+
+@media screen and (max-width:1024px) {
+    .title {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .left {
+        width: 80%;
+        margin: auto;
+        clear: both;
+        float: initial;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .right {
+        width: 80%;
+        margin: auto;
+        clear: both;
+        float: initial;
+        border: 2px solid grey;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    td,
+    th {
+        line-height: 2;
+    }
+
+    span {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .title img {
+        width: 30px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .num {
+        width: 15px;
+        font-size: 15px;
+    }
+
+    #note {
+        width: 30%;
+    }
+
+    .up,
+    .down {
+        width: 15px;
+    }
+
+    .bottom {
+        font-size: 18px;
+    }
+
+    .confirm,
+    .back {
+        width: 50px;
+        margin-left: 10px;
+    }
+    .cancel.RWD {
+        display: inline-block;
+    }
+    th:nth-child(1) {
+        width: 40%;
+    }
+    th:nth-child(2) {
+        width: 15%;
+    }
+    th:nth-child(3) {
+        width: 20%;
+    }
+    th:nth-child(4) {
+        width: 25%;
+    }
+    td:nth-child(1) {
+        width: 40%;
+    }
+    td:nth-child(2) {
+        width: 15%;
+    }
+    td:nth-child(3) {
+        width: 20%;
+    }
+    td:nth-child(4) {
+        width: 25%;
+    }
+
+    th:nth-child(5) {
+        display: none;
+    }
+
+    td:nth-child(5) {
+        display: none;
+    }
+
+}

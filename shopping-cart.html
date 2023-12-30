@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Bar｜精釀啤酒</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/shopping-cart.css" rel="stylesheet">
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/burger.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./image/main/logo.png"></a>
+        </div>
+        <div class="logo-small">
+            <a href="index.html"><img src="./image/main/logo-small.png"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="news.html">最新消息</a> </li>
+                    <li><a href="about-us.html">關於我們</a> </li>
+                    <li><a href="beer.html">酒類介紹</a> </li>
+                    <li><a href="food.html">特色料理</a> </li>
+                    <li><a href="take-out.html">我要外帶</a> </li>
+                    <li><a href="location.html">美味據點</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="shopping-icon">
+            <a href="shopping-cart.html"><img src="./image/main/shopping-cart.png" alt="購物車"></a>
+        </div>
+        <div class="burger-icon">
+            <div class="black-line">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="burger">
+            <ul class="main-nav-burger">
+                <li><a href="news.html">最新消息</a> </li>
+                <li><a href="about-us.html">關於我們</a> </li>
+                <li><a href="beer.html">酒類介紹</a> </li>
+                <li><a href="food.html">特色料理</a> </li>
+                <li><a href="take-out.html">我要外帶</a> </li>
+                <li><a href="location.html">美味據點</a> </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="burger">
+            <ul class="main-nav-burger">
+                <li><a href="news.html">最新消息</a> </li>
+                <li><a href="about-us.html">關於我們</a> </li>
+                <li><a href="beer.html">酒類介紹</a> </li>
+                <li><a href="food.html">特色料理</a> </li>
+                <li><a href="take-out.html">我要外帶</a> </li>
+                <li><a href="location.html">美味據點</a> </li>
+            </ul>
+        </div>
+        <ul id="order">
+            <li><a href="order.html">立即訂位</a></li>
+        </ul>
+        <div class="order-RWD">
+            <p><a href="order.html">立即訂位</a></p>
+        </div>
+        <div class="container">
+            <!--購物車樣本-->
+            <div class="title" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"><img src="./image/shopping-cart/shopping-cart-black.png">購物車</div>
+            <div class="information" >
+                <div class="left" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <table>
+                        <tr>
+                            <th>產品名稱</th>
+                            <th>單價</th>
+                            <th>數量</th>
+                            <th>合計</th>
+                            <th>備註</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                經典厚切牛排
+                            </td>
+                            <td>
+                                <div class="price">599</div>
+                            </td>
+                            <td><img src="./image/shopping-cart/down.png" class="down">
+                                <input type="text" name="num" class="num" value="0">
+                                <img src="./image/shopping-cart/up.png" class="up">
+                            </td>
+                            <td>
+                                <div class="sum"></div>
+                                <div class="cancel RWD">X</div>
+                            </td>
+                            <td><input type="text" name="note" id="note">
+                                <div class="cancel">X</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                香辣海鮮義大利麵
+                            </td>
+                            <td>
+                                <div class="price">399</div></td>
+                            <td><img src="./image/shopping-cart/down.png" class="down">
+                                <input type="text" name="num" class="num" value="0">
+                                <img src="./image/shopping-cart/up.png" class="up">
+                            </td>
+                            <td>
+                                <div class="sum"></div>
+                                <div class="cancel RWD">X</div>
+                            </td>
+                            <td><input type="text" name="note" id="note">
+                                <div class="cancel">X</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                特製牛肉漢堡
+                            </td>
+                            <td>
+                                <div class="price">399</div></td>
+                            <td><img src="./image/shopping-cart/down.png" class="down">
+                                <input type="text" name="num" class="num" value="0">
+                                <img src="./image/shopping-cart/up.png" class="up">
+                            </td>
+                            <td>
+                                <div class="sum"></div>
+                                <div class="cancel RWD">X</div>
+                            </td>
+                            <td><input type="text" name="note" id="note">
+                                <div class="cancel">X</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--表單-->
+                <form class="right" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <div>
+                        <label for="name" required>
+                            <span>訂購姓名:</span>
+                            <input type="text" id="name" placeholder="訂購姓名">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="tel" required>
+                            <span>連絡電話:</span>
+                            <input type="text" id="tel" placeholder="09-********">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="date" required>
+                            <span>取餐日期:</span>
+                            <input type="date" id="date">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="time" required>
+                            <span>取餐時間:</span>
+                            <input type="time" id="time">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="shop" required>
+                            <span>取餐據點:</span>
+                            <select name="shop" id="shop">
+                                <option value="shop">請選擇地點</option>
+                                <option value="WolfBar">WolfBar</option>
+                                <option value="Little-Wolf">Little-Wolf</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pay" required>
+                            <span>付款方式:</span>
+                            <select name="pay" id="pay">
+                                <option value="pay">選擇支付方式</option>
+                                <option value="cash">現金</option>
+                                <option value="transfer">轉帳</option>
+                                <option value="LinePay">LinePay</option>
+                                <option value="ApplePay">ApplePay</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="msg">
+                            <span>其他備註:</span>
+                            <textarea name="msg" id="msg" rows="7" cols="30" placeholder="有任何需求嗎?可以先寫在這裡哦!"></textarea>
+                        </label>
+                    </div>
+                </form>
+                <!--總金額與按鈕-->
+                <div class="bottom">
+                    <div class="total">總金額:<b>0</b>元</div>
+                    <div class="back"><a href="./take-out.html">返回</a></div>
+                    <div class="confirm">確認</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h1>Contact us
+                <hr>
+            </h1>
+            <p id="facebook"><a href="https://www.facebook.com/" target="_blank"><img
+                        src="./image/main/facebook.png"></a></p>
+            <p id="instagram"><a href="https://www.instagram.com/" target="_blank"><img
+                        src="./image/main/instagram.png"></a></p>
+            <p id="twitter"><a href="https://www.twitter.com/" target="_blank"><img src="./image/main/twitter.png"></a>
+            </p>
+        </div>
+        <div>
+            <p>&copy;2023 Little-Wolf</p>
+        </div>
+    </footer>
+    <script src="javascript/shopping-cart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>

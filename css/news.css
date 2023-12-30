@@ -1,0 +1,96 @@
+.news-card-container {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    margin: 0 0 20px 20px;
+    box-shadow: 0 0 10px black;
+    border: 2px solid rgba(109, 109, 3, 0.493);
+}
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: linear-gradient(transparent 0%, black 80%);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px black;
+    transform: translate(-8px, -8px);
+    cursor: pointer;
+    transition: 0.5;
+    color: rgba(255, 255, 0, 0.786);
+}
+
+
+
+.msg {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transform: translate(-250px,-125px);
+    background-color: rgb(233, 220, 233);
+    display: none;
+}
+
+.msg p,
+.msg h1 {
+    text-align: center;
+    color: black;
+    line-height: 1.5;
+
+}
+
+.msg p {
+    margin-top: 30px;
+}
+
+
+
+
+
+.cancel {
+    width: 50px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2px;
+    display: block;
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    text-align: center;
+    transform: translateX(-25px);
+    overflow: hidden;
+}
+
+.cancel :hover {
+    cursor: pointer;
+    background-color: grey;
+
+}
+
+.cancel h1 {
+    color: black;
+}
+
+/*RWD*/
+@media screen and (max-width:1200px){
+    .card{width: 280px;}
+
+}

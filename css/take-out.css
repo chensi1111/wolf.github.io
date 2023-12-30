@@ -1,0 +1,82 @@
+.container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    background-color: rgb(152, 120, 67);
+    width: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1,
+.card h2 {
+    margin-left: 10px;
+    color: black;
+
+}
+
+.card h1 {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.card p {
+    color: rgb(45, 45, 45);
+    line-height: 1;
+    margin-left: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.minus,
+.plus {
+    width: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input {
+    width: 20px;
+    display: inline-block;
+    vertical-align: super;
+
+}
+
+.btn {
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
+.confirm {
+    margin: auto;
+    display: block;
+    width: 90px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: rgb(106, 105, 105);
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+}
+
+.confirm:hover {
+    transform: translate(-5px, -5px);
+}

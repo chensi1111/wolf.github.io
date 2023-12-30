@@ -1,0 +1,66 @@
+.location {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    box-shadow: black 3px 3px;
+    background-color: rgb(152, 120, 67);
+}
+
+.information {
+    display: block;
+    float: left;
+    width: 40%;
+   
+
+}
+
+.information h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: black 3px 3px;
+    margin: 20px;
+    text-align: center;
+}
+
+.information p {
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+.decoration {
+    padding: 100px 20px 20px 10px;
+    float: left;
+    width: 50%;
+}
+
+/*RWD*/
+
+@media screen and (max-width:1200px) {
+    .location {
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    .information {
+        width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .decoration {
+        width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    .location{width: 90%;}
+    .information h1{font-size: 28px;}
+}

@@ -1,0 +1,132 @@
+.about-us-top {
+    margin-top: 30px;
+}
+
+.text.left {
+    width: 30%;
+    float: left;
+    margin-left: 20%;
+    padding-top: 30px;
+    text-shadow: black 3px 3px 3px;
+    line-height: 2;
+}
+
+.text.left h1 {
+    font-size: 35px;
+    text-align: center;
+    text-decoration: overline underline;
+}
+
+.text.left p {
+    font-size: 18px;
+}
+
+.pic.right {
+    width: 25%;
+    float: right;
+    margin-right: 20%;
+    padding-top: 30px;
+}
+
+.pic.left {
+    width: 30%;
+    float: left;
+    clear: left;
+    margin: 0 0 5% 20%;
+    padding-top: 30px;
+}
+
+.text.right {
+    width: 25%;
+    clear: right;
+    float: right;
+    margin: 0 20% 5% 0;
+    padding-top: 30px;
+    text-shadow: black 3px 3px 3px;
+    line-height: 2;
+}
+
+.text.right h1 {
+    font-size: 35px;
+    text-align: center;
+    text-decoration: overline underline;
+}
+
+.text.right p {
+    font-size: 18px;
+}
+
+.separate {
+    clear: both;
+    padding-top: 50px;
+    background-image: url(../image/main/beer-icon.png);
+    background-repeat: repeat-x;
+}
+
+.ourstory {
+    min-width: 100%;
+}
+
+.ourstory-title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.75rem;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 10px #000;
+    margin: 50px 0;
+}
+
+.ourstory .timeline-box {
+    max-width: 100%;
+    background-image: url(../image/about-us/background-abous-us.jpg);
+
+
+}
+
+.ourstory .timeline {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    border-left: 4px solid lightsalmon;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: auto;
+    line-height: 1.5;
+    padding: 20px 20px 0px 20px;
+
+}
+
+
+.ourstory .timeline .event h4 {
+    font-size: 1.25rem;
+    color: lightsalmon;
+}
+
+.ourstory .timeline-box .timeline .event p {
+    font-size: 1.1rem;
+}
+
+.ourstory .timeline .event {
+    border-bottom: 1px dashed lightskyblue;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/*RWD*/
+@media screen and (max-width:1200px) {
+    .text.right,
+    .text.left,
+    .pic.left,
+    .pic.right {
+        clear: both;
+        float: initial;
+        margin: auto;
+        width: 80%;
+    }
+
+    .pic.right {
+        display: flex;
+        justify-content: center;
+    }
+}

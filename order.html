@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Bar｜精釀啤酒</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/order.css" rel="stylesheet">
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/burger.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./image/main/logo.png"></a>
+        </div>
+        <div class="logo-small">
+            <a href="index.html"><img src="./image/main/logo-small.png"></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="news.html">最新消息</a> </li>
+                    <li><a href="about-us.html">關於我們</a> </li>
+                    <li><a href="beer.html">酒類介紹</a> </li>
+                    <li><a href="food.html">特色料理</a> </li>
+                    <li><a href="take-out.html">我要外帶</a> </li>
+                    <li><a href="location.html">美味據點</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="shopping-icon">
+            <a href="shopping-cart.html"><img src="./image/main/shopping-cart.png" alt="購物車"></a>
+        </div>
+        <div class="burger-icon">
+            <div class="black-line">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="burger">
+            <ul class="main-nav-burger">
+                <li><a href="news.html">最新消息</a> </li>
+                <li><a href="about-us.html">關於我們</a> </li>
+                <li><a href="beer.html">酒類介紹</a> </li>
+                <li><a href="food.html">特色料理</a> </li>
+                <li><a href="take-out.html">我要外帶</a> </li>
+                <li><a href="location.html">美味據點</a> </li>
+            </ul>
+        </div>
+        <ul id="order">
+            <li><a href="order.html">立即訂位</a></li>
+        </ul>
+        <div class="order-RWD">
+            <p><a href="order.html">立即訂位</a></p>
+        </div>
+        <article>
+            <div class="topic">Reserve</div>
+            <!--圖片與地圖-->
+            <div class="left">
+                <h1 data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">WolfBar |</h1>
+                <p class="address WolfBar">點擊查看詳細地址</p>
+                <p class="return first">返回</p>
+                <img src="./image/order/bar.jpg" id="WolfBar" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0043984019053!2d121.5645793!3d25.033924799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6e9d93249%3A0xd508f7b3aa02d931!2z5Y-w5YyXMTAx6KeA5pmv5Y-w!5e0!3m2!1szh-TW!2stw!4v1702474835007!5m2!1szh-TW!2stw"
+                    width="480" height="300" style="border: 2px;;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="map1"></iframe>
+                <h1 data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">Little-Wolf |</h1>
+                <p class="address Little-Wolf">點擊查看詳細地址</p>
+                <p class="return second">返回</p>
+                <img src="./image/order/pool-bar.jpg" id="Little-Wolf" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29128.200293053826!2d120.6628350843815!3d24.135758873117428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d71482ef0b3%3A0x4955c6dbae8d71e7!2sMitsui%20Shopping%20Park%20LaLaport%20%E5%8F%B0%E4%B8%AD!5e0!3m2!1szh-TW!2stw!4v1702561263190!5m2!1szh-TW!2stw"
+                    width="480" height="300" style="border:2px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="map2"></iframe>
+            </div>
+            <!--表單-->
+            <form class="right" data-aos="fade-left"  data-aos-duration="1500">
+                <div>
+                    <label for="name" required>
+                        <span>訂位姓名:</span>
+                        <input type="text" id="name" placeholder="您的名字">
+                    </label>
+                </div>
+                <div>
+                    <label for="number" required>
+                        <span>訂位人數:</span>
+                        <input type="text" id="number" placeholder="訂位人數">
+                    </label>
+                </div>
+                <div>
+                    <label for="tel" required>
+                        <span>連絡電話:</span>
+                        <input type="tel" id="tel" placeholder="09-********">
+                    </label>
+                </div>
+                <div>
+                    <label for="date" required>
+                        <span>預約日期:</span>
+                        <input type="date" id="date">
+                    </label>
+                </div>
+                <div>
+                    <label for="time" required>
+                        <span>預約時間:</span>
+                        <input type="time" id="time">
+                    </label>
+                </div>
+                <div>
+                    <label for="shop" required>
+                        <span>預定據點:</span>
+                        <select name="shop" id="shop">
+                            <option value="shop">請選擇地點</option>
+                            <option value="WolfBar">WolfBar</option>
+                            <option value="Little-Wolf">Little-Wolf</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="purpose" >
+                        <span>用餐目的:</span>
+                        <select name="purpose" id="purpose">
+                            <option value="purpose">請選擇目的</option>
+                            <option value="friend">朋友聚餐</option>
+                            <option value="birthday">生日</option>
+                            <option value="couple">約會</option>
+                            <option value="anniversary">紀念日</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="msg">
+                        <span>其他備註:</span>
+                        <textarea name="msg" id="msg" rows="7" cols="30"
+                            placeholder="有任何需求嗎?可以先寫在這裡哦! (例如:行動不便、過敏)"></textarea>
+                    </label>
+                </div>
+                <input type="submit" value="確認送出">
+            </form>
+        </article>
+    </div>
+    <footer>
+        <div>
+            <h1>Contact us
+                <hr>
+            </h1>
+            <p id="facebook"><a href="https://www.facebook.com/" target="_blank"><img
+                        src="./image/main/facebook.png"></a>
+            </p>
+            <p id="instagram"><a href="https://www.instagram.com/" target="_blank"><img
+                        src="./image/main/instagram.png"></a></p>
+            <p id="twitter"><a href="https://www.twitter.com/" target="_blank"><img src="./image/main/twitter.png"></a>
+            </p>
+        </div>
+        <div>
+            <p>&copy;2023 Little-Wolf</p>
+        </div>
+    </footer>
+    <script src="javascript/order.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
